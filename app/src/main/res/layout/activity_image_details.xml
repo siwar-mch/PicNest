@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Image container with overlay buttons -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/detailLikeButton"
+                    android:src="@drawable/like"
+                    android:background="@null"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Like"/>
+
+                <ImageButton
+                    android:id="@+id/detailDownloadButton"
+                    android:src="@drawable/download"
+                    android:background="@null"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Download"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/commentInput"
+            android:hint="Add a comment..."
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/postCommentButton"
+            android:text="Post Comment"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

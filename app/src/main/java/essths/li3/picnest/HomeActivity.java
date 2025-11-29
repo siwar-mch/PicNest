@@ -2,7 +2,7 @@ package essths.li3.picnest;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.SearchView;
+import androidx.appcompat.widget.SearchView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;

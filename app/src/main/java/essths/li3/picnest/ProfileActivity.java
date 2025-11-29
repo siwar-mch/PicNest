@@ -31,8 +31,8 @@ public class ProfileActivity extends AppCompatActivity {
         for(int i=1;i<=8;i++) uploadedImages.add("sample_image"+i);
         for(int i=9;i<=15;i++) favoriteImages.add("sample_image"+i);
 
-        uploadsAdapter = new ImageAdapter(uploadedImages, position -> {});
-        favoritesAdapter = new ImageAdapter(favoriteImages, position -> {});
+        //uploadsAdapter = new PinsAdapter(uploadedImages, position -> {});
+        //favoritesAdapter = new PinsAdapter(favoriteImages, position -> {});
 
         profileUploadsRecycler.setAdapter(uploadsAdapter);
         profileFavoritesRecycler.setAdapter(favoritesAdapter);
